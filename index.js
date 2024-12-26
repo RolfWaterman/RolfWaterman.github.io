@@ -21,27 +21,27 @@ function updateClock() {
 }
 
 function getDigitalDate(days, months, years, hours, minutes, seconds) {
-    return `${days}-${months}-${years}`;
+    return `${days} / ${months} / ${years}`;
 }
 
 function getDigitalTime(days, months, years, hours, minutes, seconds) {
-    return `${hours}:${minutes}:${seconds}`;
+    return `${hours} : ${minutes} : ${seconds}`;
 }
 
 function getRomanDate(days, months, years, hours, minutes, seconds) {
-    return `${toRomanNumber(days)}-${toRomanNumber(months)}-${toRomanNumber(years)}`;
+    return `${toRomanNumber(days)} / ${toRomanNumber(months)} / ${toRomanNumber(years)}`;
 }
 
 function getRomanTime(days, months, years, hours, minutes, seconds) {
-    return `${toRomanNumber(hours)}:${toRomanNumber(minutes)}:${toRomanNumber(seconds)}`;
+    return `${toRomanNumber(hours)} : ${toRomanNumber(minutes)} : ${toRomanNumber(seconds)}`;
 }
 
 function getMorseDate(days, months, years, hours, minutes, seconds) {
-    return `${toMorseNumber(days)}-${toMorseNumber(months)}-${toMorseNumber(years)}`;
+    return `${toMorseNumber(days)} / ${toMorseNumber(months)} / ${toMorseNumber(years)}`;
 }
 
 function getMorseTime(days, months, years, hours, minutes, seconds) {
-    return `${toMorseNumber(hours)}:${toMorseNumber(minutes)}:${toMorseNumber(seconds)}`;
+    return `${toMorseNumber(hours)} : ${toMorseNumber(minutes)} : ${toMorseNumber(seconds)}`;
 }
 
 function toRomanNumber(value) {
