@@ -102,5 +102,11 @@ function toMorseNumber(value) {
     return result.trim();
 }
 
+function toggleDiv() {
+    const div = document.getElementById('myDiv');
+    div.classList.toggle('expanded');
+}
+
+
 setInterval(updateClock, 1000);
 updateClock(); // Initial call to display clock immediately

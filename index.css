@@ -77,3 +77,14 @@ body {
     margin-top: 0;
 }
 
+.collapsible {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.5s ease-out;
+}
+
+.collapsible.expanded {
+    max-height: 800px; /* Pas dit aan afhankelijk van de inhoud */
+}
+
+
