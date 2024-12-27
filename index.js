@@ -45,7 +45,7 @@ function getMorseTime(days, months, years, hours, minutes, seconds) {
 }
 
 function toRomanNumber(value) {
-    if (value <= 0 || value >= 4000) {
+    if (value < 0 || value >= 4000) {
         return "waarde moet groter dan 0 en kleiner dan 4000 zijn.";
     }
 
